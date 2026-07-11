@@ -1,6 +1,6 @@
 # Nostra-page
 - Nostra 
-- A responsive multi-page e-commerce website for a leather goods brand, built with HTML, Tailwind CSS, and vanilla JavaScript — no frameworks, no build step.
+- A responsive multi-page e-commerce website for a leather goods brand, built with HTML, Tailwind CSS, and  JavaScript .
 ## Features
 - Home page — hero section, scrolling material marquee, featured categories, testimonials
 - Shop page — product grid with category filtering and price sorting
