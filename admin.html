@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin — Bulk Add Products | Nostra</title>
+ <link href="./src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="antialiased min-h-screen">
+
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-[#F3EFE7]/90 backdrop-blur border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="font-display text-2xl tracking-[0.15em]">NOSTRA</a>
+      <nav class="hidden md:flex items-center gap-10 text-sm uppercase tracking-wider">
+        <a href="index.html" class="link-draw">Home</a>
+        <a href="shop.html" class="link-draw">Shop</a>
+        <a href="admin.html" class="link-draw text-[#C9A15A]">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="max-w-5xl mx-auto px-5 sm:px-8 py-14">
+    <p class="uppercase tracking-[0.3em] text-xs text-[#6E7B5C] mb-3 reveal">Admin Panel</p>
+    <h1 class="font-display italic text-4xl mb-3 reveal">Bulk Add Products</h1>
+    <p class="text-[#8A8578] mb-10 max-w-xl reveal">Paste a JSON array of products below and click "Add All". They'll appear instantly on the Shop page — saved in your browser.</p>
+
+    <div class="grid lg:grid-cols-5 gap-10">
+
+      <!-- Form -->
+      <div class="lg:col-span-3">
+        <div class="flex items-center justify-between mb-2">
+          <label class="text-xs uppercase tracking-wider text-[#8A8578]">Products JSON</label>
+          <button id="loadSample" class="text-xs uppercase tracking-wider text-[#C9A15A] underline">Load Sample</button>
+        </div>
+        <textarea id="jsonInput" rows="14"
+          class="w-full bg-white border border-black/15 rounded-md p-4 text-sm font-mono focus:outline-none focus:border-[#C9A15A] resize-y"
+          placeholder='[
+  {
+    "name": "Product Name",
+    "category": "bags",
+    "price": 2999,
+    "img": "https://images.unsplash.com/..."
+  }
+]'></textarea>
+
+        <div class="flex flex-wrap items-center gap-3 mt-4">
+          <button id="addAllBtn" class="bg-[#14171C] text-[#F3EFE7] px-6 py-3 text-sm uppercase tracking-wider hover:bg-[#6E7B5C] transition-colors">Add All to Shop</button>
+          <button id="clearStorageBtn" class="border border-black/20 px-6 py-3 text-sm uppercase tracking-wider hover:border-black transition-colors">Clear Added Products</button>
+          <a href="shop.html" class="text-sm uppercase tracking-wider link-draw">View Shop →</a>
+        </div>
+
+        <p id="statusMsg" class="mt-4 text-sm hidden"></p>
+      </div>
+
+      <!-- Info / live count -->
+      <div class="lg:col-span-2 space-y-6">
+        <div class="bg-[#14171C] text-[#F3EFE7] rounded-md p-6 reveal">
+          <p class="text-xs uppercase tracking-wider text-[#C9A15A] mb-2">Currently Stored</p>
+          <p id="storedCount" class="font-display text-4xl">0</p>
+          <p class="text-xs text-[#8A8578] mt-1">extra products saved in this browser</p>
+        </div>
+
+        <div class="border border-black/15 rounded-md p-6 reveal">
+          <p class="text-xs uppercase tracking-wider text-[#8A8578] mb-3">Required Fields</p>
+          <ul class="text-sm space-y-1.5">
+            <li><span class="text-[#C9A15A]">name</span> — string</li>
+            <li><span class="text-[#C9A15A]">category</span> — bags / footwear / accessories / apparel</li>
+            <li><span class="text-[#C9A15A]">price</span> — number (₹)</li>
+            <li><span class="text-[#C9A15A]">img</span> — image URL</li>
+          </ul>
+        </div>
+
+        <div id="previewList" class="border border-black/15 rounded-md p-6 hidden reveal">
+          <p class="text-xs uppercase tracking-wider text-[#8A8578] mb-3">Recently Added</p>
+          <ul id="previewItems" class="text-sm space-y-2"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-black/10 bg-[#14171C] text-[#F3EFE7] mt-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-8 text-center text-xs text-[#8A8578]">
+      &copy; <span id="year"></span> Nostra. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="admin.js"></script>
+
+</body>
+</html>

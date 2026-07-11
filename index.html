@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-black text-white backdrop-blur border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="font-display text-2xl tracking-[0.15em]">NOSTRA</a>
+      <nav class="hidden md:flex items-center gap-10 text-sm uppercase tracking-wider">
+        <a href="index.html" class="link-draw">Home</a>
+        <a href="shop.html" class="link-draw">Shop</a>
+        <a href="about.html" class="link-draw">About</a>
+        <a href="contact.html" class="link-draw">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="shop.html" class="text-sm uppercase tracking-wider border border-black px-5 py-2 hover:bg-amber-400 hover:text-[#96773a] transition-colors ">Shop Now</a>
+      </div>
+      <button id="menuBtn" class="md:hidden" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    
+  </header>
+
+  
+  <!--sidebar-->
+  
+
+     <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 pt-14 pb-10 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <p class="uppercase tracking-[0.3em] text-xs text-[#6E7B5C] mb-6">Est.2019 — Handcrafted Goods</p>
+      <h1 class="font-display italic text-4xl sm:text-6xl leading-[1.05]">Objects made<br>to be <span class="not-italic text-[#C9A15A]">used,</span><br>not admired.</h1>
+      <p class="mt-6 text-[#8A8578] max-w-md leading-relaxed">Nostra crafts leather bags, footwear and small goods from materials chosen to age well — worn in, not worn out.</p>
+      <div class="mt-8 flex gap-4">
+        <a href="shop.html" class="bg-[#14171C] text-[#F3EFE7] px-7 py-3 text-sm uppercase tracking-wider hover:bg-[#6E7B5C] transition-colors">Explore Collection</a>
+        <a href="about.html" class="border border-black/30 px-7 py-3 text-sm uppercase tracking-wider hover:border-black transition-colors">Our Story</a>
+      </div>
+    </div>
+    <div class="relative aspect-[4/5] overflow-hidden rounded-sm">
+      <img src="./image/image1.jpg" alt="Nostra leather bag" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+  <!-- Material marquee (signature element) -->
+  <section class="border-y border-black/10 py-5 overflow-hidden bg-[#14171C] text-[#F3EFE7]">
+    <div class="marquee-track">
+      <div class="flex items-center gap-16 pr-16 text-xs uppercase tracking-[0.25em] shrink-0">
+        <span>Full-Grain Leather</span><span class="text-[#C9A15A]">•</span>
+        <span>Waxed Canvas</span><span class="text-[#C9A15A]">•</span>
+        <span>Brass Hardware</span><span class="text-[#C9A15A]">•</span>
+        <span>Hand-Stitched</span><span class="text-[#C9A15A]">•</span>
+        <span>Vegetable-Tanned</span><span class="text-[#C9A15A]">•</span>
+      </div>
+      <div class="flex items-center gap-16 pr-16 text-xs uppercase tracking-[0.25em] shrink-0" aria-hidden="true">
+        <span>Full-Grain Leather</span><span class="text-[#C9A15A]">•</span>
+        <span>Waxed Canvas</span><span class="text-[#C9A15A]">•</span>
+        <span>Brass Hardware</span><span class="text-[#C9A15A]">•</span>
+        <span>Hand-Stitched</span><span class="text-[#C9A15A]">•</span>
+        <span>Vegetable-Tanned</span><span class="text-[#C9A15A]">•</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured categories -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+    <div class="flex items-end justify-between mb-10 reveal">
+      <h2 class="font-display text-3xl">Shop by Category</h2>
+      <a href="shop.html" class="link-draw text-sm uppercase tracking-wider">View All</a>
+    </div>
+    <div class="grid sm:grid-cols-3 gap-6">
+      <a href="shop.html" class="group relative aspect-[3/4] overflow-hidden rounded-sm reveal">
+        <img src="./image/image2.jpg " class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Bags">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute bottom-5 left-5 text-white font-display italic text-xl">Bags</span>
+      </a>
+      <a href="shop.html" class="group relative aspect-[3/4] overflow-hidden rounded-sm reveal">
+        <img src="./image/image3.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Footwear">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute bottom-5 left-5 text-white font-display italic text-xl">Footwear</span>
+      </a>
+      <a href="shop.html" class="group relative aspect-[3/4] overflow-hidden rounded-sm reveal">
+        <img src="./image/image4.jpg"w-600 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Accessories">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+        <span class="absolute bottom-5 left-5 text-white font-display italic text-xl">Accessories</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Editorial statement -->
+  <section class="bg-[#6E7B5C] text-[#F3EFE7] py-24 px-5 sm:px-8">
+    <div class="max-w-3xl mx-auto text-center reveal">
+      <p class="uppercase tracking-[0.3em] text-xs mb-6 opacity-80">Our 0Philosophy</p>
+      <p class="font-display italic text-2xl sm:text-4xl leading-snug">"We don't chase seasons. Every piece is built slow, from materials that were never meant to be disposable."</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 py-20">
+    <h2 class="font-display text-3xl mb-10 reveal">What People Say</h2>
+    <div class="grid sm:grid-cols-3 gap-8">
+      <div class="reveal">
+        <p class="text-[#8A8578] leading-relaxed">"Four years in and my Nostra tote looks better than the day I bought it."</p>
+        <p class="mt-4 text-sm uppercase tracking-wider">— Ananya R.</p>
+      </div>
+      <div class="reveal">
+        <p class="text-[#8A8578] leading-relaxed">"The stitching detail alone tells you someone cared about this."</p>
+        <p class="mt-4 text-sm uppercase tracking-wider">— Karthik V.</p>
+      </div>
+      <div class="reveal">
+        <p class="text-[#8A8578] leading-relaxed">"Simple, sturdy, no logos screaming at you. Exactly what I wanted."</p>
+        <p class="mt-4 text-sm uppercase tracking-wider">— Meera S.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-black/10 bg-[#14171C] text-[#F3EFE7]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-14 grid sm:grid-cols-4 gap-10">
+      <div>
+        <p class="font-display text-xl tracking-[0.15em] mb-3">NOSTRA</p>
+        <p class="text-sm text-[#8A8578]">Handcrafted leather goods, made to age with you.</p>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wider mb-4 text-[#C9A15A]">Shop</p>
+        <ul class="space-y-2 text-sm text-[#8A8578]">
+          <li><a href="shop.html" class="link-draw">Bags</a></li>
+          <li><a href="shop.html" class="link-draw">Footwear</a></li>
+          <li><a href="shop.html" class="link-draw">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wider mb-4 text-[#C9A15A]">Company</p>
+        <ul class="space-y-2 text-sm text-[#8A8578]">
+          <li><a href="about.html" class="link-draw">About</a></li>
+          <li><a href="contact.html" class="link-draw">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-xs uppercase tracking-wider mb-4 text-[#C9A15A]">Newsletter</p>
+        <form class="flex gap-2">
+          <input type="email" placeholder="Email address" class="bg-transparent border-b border-[#8A8578] text-sm py-1 flex-1 focus:outline-none focus:border-[#C9A15A]">
+          <button class="text-sm uppercase tracking-wider text-[#C9A15A]">Join</button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-white/10 text-center text-xs text-[#8A8578] py-5">
+      &copy; <span id="year"></span> Nostra. All rights reserved.
+    </div>
+  </footer>
+  <!--sidebar script-->
+  
+
+  <script src="main.js"></script>
+   
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Nostra</title>
+ <link href="./src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+
+  <header class="sticky top-0 z-50 bg-[#F3EFE7]/90 backdrop-blur border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="font-display text-2xl tracking-[0.15em]">NOSTRA</a>
+      <nav class="hidden md:flex items-center gap-10 text-sm uppercase tracking-wider">
+        <a href="index.html" class="link-draw">Home</a>
+        <a href="shop.html" class="link-draw">Shop</a>
+        <a href="about.html" class="link-draw">About</a>
+        <a href="contact.html" class="link-draw text-[#C9A15A]">Contact</a>
+      </nav>
+      <a href="shop.html" class="hidden md:block text-sm uppercase tracking-wider border border-black px-5 py-2 hover:bg-black hover:text-[#F3EFE7] transition-colors">Shop Now</a>
+      <button id="menuBtn" class="md:hidden" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobileMenu" class="hidden md:hidden border-t border-black/10 bg-[#F3EFE7] px-5 py-4 space-y-4 text-sm uppercase tracking-wider">
+      <a href="index.html" class="block">Home</a>
+      <a href="shop.html" class="block">Shop</a>
+      <a href="about.html" class="block">About</a>
+      <a href="contact.html" class="block">Contact</a>
+    </div>
+  </header>
+
+  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-16 grid md:grid-cols-2 gap-14">
+    <div class="reveal">
+      <p class="uppercase tracking-[0.3em] text-xs text-[#6E7B5C] mb-4">Get in Touch</p>
+      <h1 class="font-display italic text-4xl mb-6">Let's talk.</h1>
+      <p class="text-[#8A8578] leading-relaxed mb-8">Questions about an order, a repair, or a custom piece — write to us and we'll get back within two business days.</p>
+      <ul class="space-y-3 text-sm">
+        <li><span class="text-[#8A8578]">Email:</span> hello@nostra.com</li>
+        <li><span class="text-[#8A8578]">Phone:</span> +91 98765 43210</li>
+        <li><span class="text-[#8A8578]">Studio:</span> Chennai, Tamil Nadu</li>
+      </ul>
+    </div>
+
+    <form id="contactForm" class="space-y-5 reveal">
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-[#8A8578] mb-2">Name</label>
+        <input id="contactName" type="text" class="w-full bg-transparent border-b border-black/20 py-2 focus:outline-none focus:border-[#C9A15A]" required>
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-[#8A8578] mb-2">Email</label>
+        <input id="contactEmail" type="email" class="w-full bg-transparent border-b border-black/20 py-2 focus:outline-none focus:border-[#C9A15A]" required>
+      </div>
+      <div>
+        <label class="block text-xs uppercase tracking-wider text-[#8A8578] mb-2">Message</label>
+        <textarea id="contactMessage" rows="4" class="w-full bg-transparent border-b border-black/20 py-2 focus:outline-none focus:border-[#C9A15A]" required></textarea>
+      </div>
+      <button type="submit" class="bg-[#14171C] text-[#F3EFE7] px-7 py-3 text-sm uppercase tracking-wider hover:bg-[#6E7B5C] transition-colors">Send Message</button>
+    </form>
+
+    <!-- Success popup (hidden by default) -->
+    <div id="successPopup" class="hidden fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-5">
+      <div class="bg-[#F3EFE7] rounded-md max-w-sm w-full p-8 text-center relative">
+        <button id="closePopup" class="absolute top-3 right-4 text-[#8A8578] text-lg">&times;</button>
+        <div class="w-12 h-12 rounded-full bg-[#6E7B5C] text-white flex items-center justify-center mx-auto mb-4 text-2xl">✓</div>
+        <h3 class="font-display italic text-2xl mb-2">Message Sent!</h3>
+        <p id="popupText" class="text-sm text-[#8A8578]">Thanks — we'll get back to you within two business days.</p>
+        <button id="popupOkBtn" class="mt-6 bg-[#14171C] text-[#F3EFE7] px-6 py-2.5 text-sm uppercase tracking-wider hover:bg-[#6E7B5C] transition-colors">OK</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#14171C] text-[#F3EFE7] mt-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 text-center text-xs text-[#8A8578]">
+      &copy; <span id="year"></span> Nostra. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>

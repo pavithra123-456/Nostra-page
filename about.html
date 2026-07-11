@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Nostra</title>
+ <link href="./src/output.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+<!--nav-->
+  <!-- Nav -->
+  <header class="sticky top-0 z-50 bg-[#F3EFE7]/90 backdrop-blur border-b border-black/10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20">
+      <a href="index.html" class="font-display text-2xl tracking-[0.15em]">NOSTRA</a>
+      <nav class="hidden md:flex items-center gap-10 text-sm uppercase tracking-wider">
+        <a href="index.html" class="link-draw">Home</a>
+        <a href="shop.html" class="link-draw">Shop</a>
+        <a href="about.html" class="link-draw">About</a>
+        <a href="contact.html" class="link-draw">Contact</a>
+      </nav>
+      <div class="hidden md:flex items-center gap-6">
+        <a href="shop.html" class="text-sm uppercase tracking-wider border border-black px-5 py-2 hover:bg-black hover:text-[#F3EFE7] transition-colors">Shop Now</a>
+      </div>
+      <button id="menuBtn" class="md:hidden" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-5xl mx-auto px-5 sm:px-8 pt-16 pb-10 text-center reveal">
+    <p class="uppercase tracking-[0.3em] text-xs text-[#6E7B5C] mb-4">Our Story</p>
+    <h1 class="font-display italic text-4xl sm:text-5xl leading-tight">Built by hand,<br>meant to outlast trend.</h1>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-5 sm:px-8 grid md:grid-cols-2 gap-10 items-center py-10">
+    <img src="./image/image5.jpg"  class="rounded-sm  
+    object-cover w-full reveal" alt="Nostra workshop">
+    <div class="reveal">
+      <p class="text-[#8A8578] leading-relaxed mb-5">Nostra began in 2019 in a small workshop with three leatherworkers and one belief: that the things we carry every day deserve more care than they usually get.</p>
+      <p class="text-[#8A8578] leading-relaxed">Every bag, shoe and accessory is still cut, stitched and finished by hand — no assembly lines, no shortcuts. We'd rather make fewer things well than more things fast.</p>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="bg-[#14171C] text-[#F3EFE7] py-20 mt-10">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid sm:grid-cols-3 gap-10">
+      <div class="reveal">
+        <p class="font-display italic text-2xl text-[#C9A15A] mb-3">Material First</p>
+        <p class="text-sm text-[#8A8578] leading-relaxed">We source full-grain leather and waxed canvas that only gets better with wear.</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display italic text-2xl text-[#C9A15A] mb-3">Made Slow</p>
+        <p class="text-sm text-[#8A8578] leading-relaxed">Small batches, hand-stitched, checked piece by piece before it ships.</p>
+      </div>
+      <div class="reveal">
+        <p class="font-display italic text-2xl text-[#C9A15A] mb-3">Repair, Not Replace</p>
+        <p class="text-sm text-[#8A8578] leading-relaxed">Every Nostra piece comes with free repairs for life. We want it to last.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-[#14171C] text-[#F3EFE7]">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-10 text-center text-xs text-[#8A8578]">
+      &copy; <span id="year"></span> Nostra. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
