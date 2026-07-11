@@ -12,5 +12,5 @@
 - HTML5
 - Tailwind CSS 
 - JavaScript 
-- HERE to visite[]
+- HERE to visite[https://pavithra123-456.github.io/Nostra-page/]
 - THANK YOU for visiting my page
